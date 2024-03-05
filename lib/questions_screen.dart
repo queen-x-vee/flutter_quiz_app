@@ -25,7 +25,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
           ),
         ),
         const SizedBox(height: 30),
-        //the 3 dots are used to indicate that the list is pulled out and added as individual comma seprated widgets
+        //the 3 dots are the spread operator and are used to indicate that the list is pulled out and added as individual comma seprated widgets
         ...currentQuestion.answers.map((answer) {
           return AnswerButton(answer, () {});
         })
